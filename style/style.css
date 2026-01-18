@@ -29,6 +29,17 @@
 }
 
 
+/* about the container section style start from here  */
+.about-card-container{
+    margin-top: 3.12rem ;
+    margin-bottom: 7.5rem ;
+}
+.about-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 /* footer section style start from here  */
 
 .footer {
@@ -99,11 +110,10 @@ span {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    
-    
-    
-   
+}
 
+.about-card-container{
+    grid-template-columns: repeat(2, 1fr);
 }
 }
 
