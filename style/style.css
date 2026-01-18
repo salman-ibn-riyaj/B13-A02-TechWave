@@ -2,7 +2,9 @@
 @import "tailwindcss"
 
 /* Font Family inter  */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 
 /* inter font class  */
@@ -11,4 +13,33 @@
   font-optical-sizing: auto;
   font-weight: 400;
   
+}
+
+/* navbar section style start  */
+.navbar img{
+    width: 13.68rem;
+    height: 2rem;
+
+}
+
+.nav-btn{
+    padding: .75rem .75rem;
+    border-radius: .62rem;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1));
+}
+
+
+@media screen and (max-width: 576px) {
+    ul{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1536px) {
+    .hamburger{
+        display: none;
+    }
 }
