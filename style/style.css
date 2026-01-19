@@ -24,37 +24,85 @@
 
 .nav-btn {
     padding: .75rem .75rem;
-    border-radius: .62rem;
+    border-radius: 2rem;
     background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1));
+}
+
+/* hero section css start from here  */
+.hero-section {
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 760px;
+    width: 100%;
+}
+
+.listen-btn {
+    color: white;
+    margin-right: 1rem;
+    padding: .75rem .75rem;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1));
+}
+
+.subscribe-btn {
+    padding: .75rem .75rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 255, 136, 1);
+    color: rgba(0, 255, 136, 1);
+    background-color: transparent;
+}
+
+.hero-content{
+    position: relative;
+}
+
+.new-btn{
+    background-color: rgba(0, 255, 136, 1);
+    border-radius: 2rem;
+    border: none;
+    color: black;
+    padding: .3rem .5rem;
+    font: 700;
+    position: absolute;
+    right: 8.5rem;
+}
+
+.bhashainna{
+    position: absolute;
+    left: 13.2rem;
+    top: 10rem;
 }
 
 
 /* about the container section style start from here  */
-.about-card-container{
-    margin-top: 3.12rem ;
-    margin-bottom: 7.5rem ;
+.about-card-container {
+    margin-top: 3.12rem;
+    margin-bottom: 7.5rem;
 }
-.about-card-container{
+
+.about-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.about-the-podcast hr{
+.about-the-podcast hr {
     margin-bottom: 1.25rem;
 }
 
-.about-the-podcast{
+.about-the-podcast {
     margin-bottom: .8rem;
 }
 
 
 /* Featured episode section style start from here  */
-.featured-episode{
+.featured-episode {
     max-width: 75rem;
     margin: 7.5rem auto;
 }
 
-.featured-container{
+.featured-container {
     display: grid;
     gap: 1.25rem;
     grid-template-columns: repeat(3, 1fr);
@@ -78,7 +126,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 6.25rem;
-    
+
 
 }
 
@@ -107,24 +155,26 @@ span {
     margin: 0 10px;
 }
 
-.host-icons img{
+.host-icons img {
     padding: .6rem;
     border: 1px solid rgba(128, 128, 128, 0.288);
     border-radius: 50%;
 }
 
 /* Why choose container style from here  */
-.why-choose-container{
+.why-choose-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1.87rem;
 }
-.no-1{
+
+.no-1 {
     grid-column: span 1;
     grid-row: span 2;
 }
-.no-2{
+
+.no-2 {
     grid-column: span 2;
     grid-row: span 1;
 }
@@ -146,46 +196,51 @@ span {
         gap: .2rem;
     }
 
-    .footer-section{
+    .footer-section {
         padding-top: 2rem;
     }
 
     .footer {
-    background-image: url(../assets/footer-bg.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-}
+        background-image: url(../assets/footer-bg.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
 
-.about-card-container{
-    grid-template-columns: repeat(2, 1fr);
-}
-.featured-container{
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    
-}
-iframe{
-    width: 300;
-    height: 300;
-}
+    .about-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.host-container{
-    display: flex;
-    flex-direction: column;
-}
-.host-content{
-    justify-items: center;
-    text-align: center;
-}
-.why-choose-container{
-    display: block;
-    
-}
-.choose-card{
-    margin: 1.25rem 1.25rem;
-   
-}
+    .featured-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+
+    }
+
+    iframe {
+        width: 300;
+        height: 300;
+    }
+
+    .host-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .host-content {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .why-choose-container {
+        display: block;
+
+    }
+
+    .choose-card {
+        margin: 1.25rem 1.25rem;
+
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1536px) {
