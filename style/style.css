@@ -39,6 +39,28 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.about-the-podcast hr{
+    margin-bottom: 1.25rem;
+}
+
+.about-the-podcast{
+    margin-bottom: .8rem;
+}
+
+
+/* Featured episode section style start from here  */
+.featured-episode{
+    max-width: 75rem;
+    margin: 7.5rem auto;
+}
+
+.featured-container{
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 
 /* footer section style start from here  */
 
@@ -114,6 +136,15 @@ span {
 
 .about-card-container{
     grid-template-columns: repeat(2, 1fr);
+}
+.featured-container{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    
+}
+iframe{
+    width: 300;
+    height: 300;
 }
 }
 
