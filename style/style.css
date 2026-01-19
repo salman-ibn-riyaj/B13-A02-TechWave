@@ -113,6 +113,23 @@ span {
     border-radius: 50%;
 }
 
+/* Why choose container style from here  */
+.why-choose-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.87rem;
+}
+.no-1{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.no-2{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
 /* Responsive media query form here  */
 @media screen and (max-width: 576px) {
     ul {
@@ -160,6 +177,14 @@ iframe{
 .host-content{
     justify-items: center;
     text-align: center;
+}
+.why-choose-container{
+    display: block;
+    
+}
+.choose-card{
+    margin: 1.25rem 1.25rem;
+   
 }
 }
 
