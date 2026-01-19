@@ -28,6 +28,10 @@
     background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1));
 }
 
+.hamburger {
+    display: none !important;
+}
+
 /* hero section css start from here  */
 .hero-section {
     background-image: url(../assets/hero-bg.png);
@@ -54,11 +58,11 @@
     background-color: transparent;
 }
 
-.hero-content{
+.hero-content {
     position: relative;
 }
 
-.new-btn{
+.new-btn {
     background-color: rgba(0, 255, 136, 1);
     border-radius: 2rem;
     border: none;
@@ -69,7 +73,7 @@
     right: 8.5rem;
 }
 
-.bhashainna{
+.bhashainna {
     position: absolute;
     left: 13.2rem;
     top: 10rem;
@@ -115,8 +119,12 @@
 .footer {
     background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     height: 25.75rem;
+    width: 100%;
+    padding-bottom: 2rem;
+
 
 }
 
@@ -125,7 +133,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 6.25rem;
+    padding-top: 150px;
 
 
 }
@@ -179,6 +187,11 @@ span {
     grid-row: span 1;
 }
 
+.featured-episode {
+    margin-top: -4.5rem auto;
+
+}
+
 
 /* Responsive media query form here  */
 @media screen and (max-width: 576px) {
@@ -203,8 +216,13 @@ span {
     .footer {
         background-image: url(../assets/footer-bg.png);
         background-repeat: no-repeat;
-        width: 100%;
+        background-position: center;
         background-size: cover;
+        height: min-content;
+        width: 100%;
+        padding-bottom: 2rem;
+
+
     }
 
     .about-card-container {
@@ -214,6 +232,12 @@ span {
     .featured-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+
+    }
+
+    .featured-episode {
+        margin-top: 4.5rem;
+        margin-bottom: -4.5rem;
 
     }
 
@@ -241,9 +265,17 @@ span {
         margin: 1.25rem 1.25rem;
 
     }
+
+    .meet-the-host {
+        margin-bottom: 3rem;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 1536px) {
+@media screen and (min-width: 576px) and (max-width: 1280px) {
     .hamburger {
         display: none;
     }
