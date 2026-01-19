@@ -107,6 +107,12 @@ span {
     margin: 0 10px;
 }
 
+.host-icons img{
+    padding: .6rem;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    border-radius: 50%;
+}
+
 /* Responsive media query form here  */
 @media screen and (max-width: 576px) {
     ul {
@@ -145,6 +151,15 @@ span {
 iframe{
     width: 300;
     height: 300;
+}
+
+.host-container{
+    display: flex;
+    flex-direction: column;
+}
+.host-content{
+    justify-items: center;
+    text-align: center;
 }
 }
 
