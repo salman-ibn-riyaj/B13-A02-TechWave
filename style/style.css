@@ -272,6 +272,13 @@ span {
 
     .hamburger {
         display: block !important;
+
+    }
+
+    .bhashainna {
+        position: absolute;
+        left: 11rem;
+        top: 10rem;
     }
 }
 
