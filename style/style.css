@@ -50,12 +50,24 @@
     background: linear-gradient(45deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1));
 }
 
+.listen-btn:hover {
+    cursor: pointer;
+}
+
 .subscribe-btn {
     padding: .75rem .75rem;
     border-radius: 2rem;
     border: 1px solid rgba(0, 255, 136, 1);
     color: rgba(0, 255, 136, 1);
     background-color: transparent;
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 0, 255, 0.693);
+
 }
 
 .hero-content {
@@ -71,6 +83,17 @@
     font: 700;
     position: absolute;
     right: 8.5rem;
+    animation: salman 2s ease-in-out .1s infinite alternate-reverse;
+}
+
+@keyframes salman {
+    from {
+        left: ;
+    }
+
+    to {
+        right: 1px;
+    }
 }
 
 .bhashainna {
@@ -277,7 +300,7 @@ span {
 
     .bhashainna {
         position: absolute;
-        left: 11rem;
+        left: 10.5rem;
         top: 10rem;
     }
 }
